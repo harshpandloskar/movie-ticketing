@@ -70,7 +70,7 @@ $(function() {
 
         for(var i=0; i<data.length; i++) {
 
-            htmlCards.push("<div class='col-sm-4'><img class='movie-selection' onclick='window.location=\"synopsis.html?movie="+encodeURIComponent(data[i].title)+"\"' src="+eval(data[i].title.replace(/\s+/g, '').replace(':', '').toLowerCase())+" class='img-responsive' style='width:100%'><p class='movie-selection' >"+data[i].title+"</p></div>");
+            htmlCards.push("<div class='col-sm-4'><img class='movie-selection' onclick='window.location=\"synopsis.php?movie="+encodeURIComponent(data[i].title)+"\"' src="+eval(data[i].title.replace(/\s+/g, '').replace(':', '').toLowerCase())+" class='img-responsive' style='width:100%'><p class='movie-selection' >"+data[i].title+"</p></div>");
         }
 
         for (var i = 0; i < htmlCards.length; i++) {

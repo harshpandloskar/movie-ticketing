@@ -49,7 +49,7 @@ $(function(){
      */
     function sendToConfirmation() {
 
-        window.location = "confirmation.html?movie="+getURLParameter("movie")+"&day="+getURLParameter("day")+"&time="+getURLParameter("time")+"&seatQuantity="+count;
+        window.location = "confirmation.php?movie="+getURLParameter("movie")+"&day="+getURLParameter("day")+"&time="+getURLParameter("time")+"&seatQuantity="+count;
     }
 
     /**
