@@ -5,16 +5,16 @@
  */
 
 
-var geostorm = "http://res.cloudinary.com/harsh16/image/upload/v1523683069/Geostorm.jpg",
-thejunglebook = "http://res.cloudinary.com/harsh16/image/upload/v1523684880/the-jungle-book.jpg",
-dirtygrandpa = "http://res.cloudinary.com/harsh16/image/upload/v1523687283/tumblr_static_tumblr_static_6j2vias80fgow8c00k8sog0kc_focused_v3.jpg",
-angrybirds = "http://res.cloudinary.com/harsh16/image/upload/v1523687378/912806583115c2ece8c45514b4381af7.png",
-findingdory = "http://res.cloudinary.com/harsh16/image/upload/v1523687463/12963512_1730531960495553_1845715565725784190_n.jpg",
-aliceinwonderlandthroughthelookingglass = "http://res.cloudinary.com/harsh16/image/upload/v1523687611/alice_through_the_looking_glass_lead.jpg",
-batmanvsupermandawnofjustice = "http://res.cloudinary.com/harsh16/image/upload/c_scale,h_464,w_825/v1523687752/landscape-1458061707-batman-v-superman-dawn-of-justice-poster.jpg",
-kungfupanda3 = "http://res.cloudinary.com/harsh16/image/upload/v1523687889/Kung-Fu-Panda-3-Hollywood-Upcoming-Movies-Poster.jpg",
-thefreestateofjones = "http://res.cloudinary.com/harsh16/image/upload/v1523687964/Free-State-of-Jones-teaser.jpg",
-zootopia = "http://res.cloudinary.com/harsh16/image/upload/v1523688083/zootopia-movie-poster-2048x1152.jpg";
+var geostorm = "https://res.cloudinary.com/harsh16/image/upload/v1523683069/Geostorm.jpg",
+thejunglebook = "https://res.cloudinary.com/harsh16/image/upload/v1523684880/the-jungle-book.jpg",
+dirtygrandpa = "https://res.cloudinary.com/harsh16/image/upload/v1523687283/tumblr_static_tumblr_static_6j2vias80fgow8c00k8sog0kc_focused_v3.jpg",
+angrybirds = "https://res.cloudinary.com/harsh16/image/upload/v1523687378/912806583115c2ece8c45514b4381af7.png",
+findingdory = "https://res.cloudinary.com/harsh16/image/upload/v1523687463/12963512_1730531960495553_1845715565725784190_n.jpg",
+aliceinwonderlandthroughthelookingglass = "https://res.cloudinary.com/harsh16/image/upload/v1523687611/alice_through_the_looking_glass_lead.jpg",
+batmanvsupermandawnofjustice = "https://res.cloudinary.com/harsh16/image/upload/c_scale,h_464,w_825/v1523687752/landscape-1458061707-batman-v-superman-dawn-of-justice-poster.jpg",
+kungfupanda3 = "https://res.cloudinary.com/harsh16/image/upload/v1523687889/Kung-Fu-Panda-3-Hollywood-Upcoming-Movies-Poster.jpg",
+thefreestateofjones = "https://res.cloudinary.com/harsh16/image/upload/v1523687964/Free-State-of-Jones-teaser.jpg",
+zootopia = "https://res.cloudinary.com/harsh16/image/upload/v1523688083/zootopia-movie-poster-2048x1152.jpg";
 
 htmlCards = [];
 
