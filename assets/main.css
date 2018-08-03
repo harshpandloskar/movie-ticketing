@@ -26,3 +26,12 @@ footer {
 .contactus-form{
   width: 450px;
 }
+
+.login-oauth {
+  padding-top: 10px;
+  float:right;
+}
+
+.login-oauth img {
+  height: 30px;
+}
