@@ -30,8 +30,21 @@ footer {
 .login-oauth {
   padding-top: 10px;
   float:right;
+  width: 250px;
 }
 
 .login-oauth img {
   height: 30px;
+}
+
+.login-oauth li {
+  display: inline-block;
+}
+
+#userFirstName {
+  color: #FFF;
+}
+
+#fbLink {
+  color: #FFF;
 }

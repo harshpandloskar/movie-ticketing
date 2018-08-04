@@ -9,7 +9,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="assets/main.js"></script>
   <link rel="stylesheet" href="assets/main.css">
-  <link rel="manifest" href="manifest.json">
   <script>
   window.fbAsyncInit = function() {
       // FB JavaScript SDK configuration and setup
@@ -65,9 +64,11 @@
   function fbLogout() {
       FB.logout(function() {
           document.getElementById('fbLink').setAttribute("onclick","fbLogin()");
-          document.getElementById('fbLink').innerHTML = '<img src="fblogin-btn.png"/>';
+          document.getElementById('fbLink').innerHTML = '<img src="./icons/fblogin-btn.png"/>';
           document.getElementById('userData').innerHTML = '';
           document.getElementById('status').innerHTML = 'You have successfully logout from Facebook.';
+          document.getElementById('userFirstName').style.display = "none"
+          document.getElementById('userpic').style.display = "none"
       });
   }
   
@@ -80,10 +81,10 @@
     FB.api('/me', {locale: 'en_US', fields: 'id,first_name,last_name,email,link,gender,locale,picture'},
     function (response) {
         document.getElementById('fbLink').setAttribute("onclick","fbLogout()");
-        document.getElementById('fbLink').innerHTML = 'Logout from Facebook';
-        document.getElementById('status').innerHTML = 'Thanks for logging in, ' + response.first_name + '!';
-        document.getElementById('userData').innerHTML = '<p><b>FB ID:</b> '+response.id+'</p><p><b>Name:</b> '+response.first_name+' '+response.last_name+'</p><p><b>Email:</b> '+response.email+'</p><p><b>Gender:</b> '+response.gender+'</p><p><b>Locale:</b> '+response.locale+'</p><p><b>Picture:</b> <img src="'+response.picture.data.url+'"/></p><p><b>FB Profile:</b> <a target="_blank" href="'+response.link+'">click to view profile</a></p>';
-        
+        document.getElementById('fbLink').innerHTML = 'Logout';
+        document.getElementById('userData').innerHTML = '<p><b>FB ID:</b> '+response.id+'</p><p><b>Name:</b> '+response.first_name+' '+response.last_name+'</p><p><b>Email:</b> '+response.email+'</p><p><b>Gender:</b> '+response.gender+'</p><p><b>Picture:</b> <img src="'+response.picture.data.url+'"/></p>';
+        document.getElementById('userpic').innerHTML = '<img src="'+response.picture.data.url+'"/>';
+        document.getElementById('userFirstName').innerHTML = 'Hi '+response.first_name+'!';
         // Save user data
         saveUserData(response);
     });
@@ -149,8 +150,17 @@
         <li class="active"><a href="contactus.php">Contact Us</a></li>
       </ul>
       <ul class="login-oauth">
-        <!-- Facebook login or logout button -->
-        <a href="javascript:void(0);" onclick="fbLogin()" id="fbLink"><img src="./icons/fblogin-btn.png"/></a>
+        <li>
+          <!-- Facebook user profile picture -->
+          <div id="userpic"></div>
+        </li>
+        <li>
+          <p id="userFirstName"></p>
+        </li>
+        <li>
+          <!-- Facebook login or logout button -->
+          <a href="javascript:void(0);" onclick="fbLogin()" id="fbLink"><img src="./icons/fblogin-btn.png"/></a>
+        </li>
       </ul>
     </div>
   </div>
