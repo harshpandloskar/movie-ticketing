@@ -1,4 +1,4 @@
-## Movie Ticking Web Application##
+## Movie Ticking Web Application
 
 **Introduction**
 
