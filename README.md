@@ -1,4 +1,6 @@
-## Movie Ticking Web Application
+## Movie Ticketing Web Application
+
+**This project is built using JavaScript, PHP, MySQL, API and OAuth Authentication Protocol using Facebook login.**
 
 **Introduction**
 
